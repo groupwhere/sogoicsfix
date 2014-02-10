@@ -39,4 +39,6 @@ define(`confTO_QUEUEWARN', `12h')dnl
 
 */5 * * * * root run-parts /usr/local/sbin/sogoicsfix.pl
 
+Note that in the script any email not containing evidence of a vcard simply gets moved to the out queue.  You can also process
+the queue in another cron job if you like.  In that case comment out the last line which calls sendmail.
 
